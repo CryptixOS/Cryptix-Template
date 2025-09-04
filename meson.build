@@ -57,6 +57,7 @@ endif
 
 deps = [
   dependency('prism'),
+  dependency('neon'),
 ]
 
 executable(
