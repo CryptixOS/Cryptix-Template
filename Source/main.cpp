@@ -4,15 +4,14 @@
  *
  * SPDX-License-Identifier: GPL-3
  */
-#include <cstdlib>
-
+#include <Prism/Core/Core.hpp>
 #include <Prism/Debug/Log.hpp>
 
 using namespace Prism;
 
-int NeonMain(const Vector<StringView>&, const Vector<StringView>&)
+ErrorOr<void> NeonMain(const Vector<StringView>&, const Vector<StringView>&)
 {
     Log::Logf(LogLevel::eDebug, "Hello, World!");
 
-    return EXIT_SUCCESS;
+    return {};
 }
